@@ -1,0 +1,6 @@
+.idea
+*.iml
+logs/*
+!target
+target/*
+!target/singularitytest-1.0-SNAPSHOT.jar
