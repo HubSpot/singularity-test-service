@@ -2,13 +2,9 @@ template: Hello, %s!
 defaultName: Stranger
 
 server:
-  type: simple
-  applicationContextPath: /docker-test-service
-  connector:
-    type: http
-    port: 8080
-
-logging:
-  level: INFO
-  appenders:
-    - type: console
+  applicationConnectors:
+    - type: http
+      port: 8080
+  adminConnectors:
+    - type: http
+      port: 8081
